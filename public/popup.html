@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started Extension's Popup</title>
+  <script src="js/vendor.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="welcome">
+      <img src="./icon.png" />
+      欢迎使用~
+    </div>
+    <!-- <div>
+      <input type="checkbox" id="iscamel" onclick="setCamel()" />
+      <span>转驼峰</span>
+    </div> -->
+    <div class="tips">本插件用于从yapi直接获取接口响应数据的ts类型</div>
+  </div>
+  <!-- 
+  <script>
+    const iscamel = localStorage.getItem('yapi2ts-camel');
+    setCamel(iscamel || false);
+
+    function setCamel() {
+      const el = document.querySelector('#iscamel');
+      console.log(el)
+      el.setAttribute('checked', el.checked);
+    }
+  </script> -->
+
+  <style type="text/css">
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 200px;
+      height: 60px;
+      padding-top: 5px;
+    }
+
+    .welcome {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      margin: 0 10px;
+      object-fit: contain;
+      width: 30px
+    }
+
+    .tips {
+      padding: 5px 10px;
+      background-color: #383838;
+      color: white;
+    }
+  </style>
+</body>
+
+</html>
